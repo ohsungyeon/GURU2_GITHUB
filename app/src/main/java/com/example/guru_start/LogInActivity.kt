@@ -42,8 +42,6 @@ class LogInActivity : AppCompatActivity() {
 
                 if (isUserValid) {
                     Toast.makeText(this, "로그인 성공!", Toast.LENGTH_SHORT).show()
-                    // 다음 액티비티로 이동
-                    // val intent
                     val intent=Intent(this, MainScreen::class.java)
                     startActivity(intent)
                     finish()
