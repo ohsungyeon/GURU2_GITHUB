@@ -44,6 +44,9 @@ class LogInActivity : AppCompatActivity() {
                     Toast.makeText(this, "로그인 성공!", Toast.LENGTH_SHORT).show()
                     // 다음 액티비티로 이동
                     // val intent
+                    val intent=Intent(this, MainScreen::class.java)
+                    startActivity(intent)
+                    finish()
                 } else {
                     Toast.makeText(this, "로그인 실패. 학번, 아이디 또는 비밀번호를 확인해주세요.", Toast.LENGTH_SHORT)
                         .show()
