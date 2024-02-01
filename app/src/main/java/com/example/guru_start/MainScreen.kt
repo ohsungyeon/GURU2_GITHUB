@@ -52,8 +52,8 @@ class MainScreen : AppCompatActivity() {
         }
 
         mypageButton.setOnClickListener {
-            val intent_mypage = Intent(this, MyPageActivity::class.java)
-            startActivity(intent_mypage)
+            val intent5 = Intent(this, MyPageActivity::class.java)
+            startActivity(intent5)
         }
 
         val spinner: Spinner = findViewById(R.id.spinner)
