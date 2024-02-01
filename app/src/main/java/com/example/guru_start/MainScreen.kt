@@ -7,6 +7,7 @@ import android.view.View
 import android.widget.AdapterView
 import android.widget.ArrayAdapter
 import android.widget.Button
+import android.widget.ImageButton
 import android.widget.Spinner
 import android.widget.TextView
 
@@ -15,7 +16,7 @@ class MainScreen : AppCompatActivity() {
     lateinit var button2: Button
     lateinit var button3: Button
     lateinit var button4: Button
-    lateinit var mypageButton: Button
+    lateinit var mypageButton: ImageButton
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
