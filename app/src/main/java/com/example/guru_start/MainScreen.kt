@@ -30,7 +30,7 @@ class MainScreen : AppCompatActivity() {
 
         button1.setOnClickListener {
             val intent1 = Intent(this, WebViewActivity::class.java)
-            intent1.putExtra("url", "http://www.swu.ac.kr/index.do")
+            intent1.putExtra("url", "https://www.swu.ac.kr/index.do")
             startActivity(intent1)
         }
 
@@ -42,13 +42,13 @@ class MainScreen : AppCompatActivity() {
 
         button3.setOnClickListener {
             val intent3 = Intent(this, WebViewActivity::class.java)
-            intent3.putExtra("url", "https://cyber.swu.ac.kr/ilos/main/member/login_form.acl")
+            intent3.putExtra("url", "https://cyber.swu.ac.kr/ilos/main/main_form.acl")
             startActivity(intent3)
         }
 
         button4.setOnClickListener {
             val intent4 = Intent(this, WebViewActivity::class.java)
-            intent4.putExtra("url", "http://www.swu.ac.kr/www/futurei_1.html")
+            intent4.putExtra("url", "https://www.swu.ac.kr/www/futurei_1.html")
             startActivity(intent4)
         }
 
