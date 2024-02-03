@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".lecture_eval">
+
+    <ImageButton
+    android:id="@+id/backButton"
+    android:layout_width="66dp"
+    android:layout_height="60dp"
+    android:layout_marginTop="4dp"
+    android:background="#FFFFFF"
+    android:contentDescription="돌아가기"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:srcCompat="@drawable/baseline_arrow_back_24" />
+
+    <HorizontalScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/lect_info_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#00ff0000"
+            android:text="강의정보"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/lect_eva_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#00ff0000"
+            android:text="강의평가"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="76dp" />
+
+        <Button
+            android:id="@+id/test_info_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="시험 정보"
+            android:background="#00ff0000"
+            android:textColor="@color/black"
+            android:textSize="16sp"/>
+
+        <Button
+            android:id="@+id/ass_info_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="과제 정보"
+            android:textColor="@color/black"
+            android:background="#00ff0000"
+            android:textSize="16sp"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="76dp" />
+
+        <Button
+            android:id="@+id/study_info_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#00ff0000"
+            android:text="공부 정보"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="76dp" />
+
+        <Button
+            android:id="@+id/que_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#00ff0000"
+            android:text="질의응답"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            tools:layout_editor_absoluteX="129dp"
+            tools:layout_editor_absoluteY="76dp" />
+    </LinearLayout>
+    </HorizontalScrollView>
+
+    <TextView
+                android:id="@+id/score_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:textSize="40sp"
+                android:textStyle="bold"/>
+
+            <RatingBar
+                android:id="@+id/ratingBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.497"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/score_text" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp">
+
+            <Button
+                android:id="@+id/ass_info_btn_main"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/main_item_button"
+                android:text="평가하기"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp"
+                tools:layout_editor_absoluteX="70dp"
+                tools:layout_editor_absoluteY="330dp"></Button>
+
+            <Button
+                android:id="@+id/study_info_btn_main"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/main_item_button"
+                android:text="다시 평가하기"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp"
+                tools:layout_editor_absoluteX="205dp"
+                tools:layout_editor_absoluteY="330dp"></Button>
+</LinearLayout>
+
+
+</LinearLayout>

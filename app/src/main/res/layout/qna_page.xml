@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".QnA_page">
+
+    <HorizontalScrollView
+        android:id="@+id/horizontalScrollView"
+        android:layout_width="407dp"
+        android:layout_height="69dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/BackImageButton1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <!-- 버튼 1 -->
+            <Button
+                android:id="@+id/LecInfoButton"
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#FFFFFF"
+                android:gravity="center"
+                android:text="강의 정보"
+                android:textColor="#020202"
+                app:cornerRadius="0dp" />
+
+            <Button
+                android:id="@+id/lec_info_btn_qna"
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#FFFFFF"
+                android:gravity="center"
+                android:text="강의평가"
+                android:textColor="#020202"
+                app:cornerRadius="0dp" />
+
+            <Button
+                android:id="@+id/test_info_btn_qna"
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#FFFFFF"
+                android:gravity="center"
+                android:text="시험 정보"
+                android:textColor="#020202"
+                app:cornerRadius="0dp" />
+
+            <Button
+                android:id="@+id/ass_info_btn_qna"
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#FFFFFF"
+                android:gravity="center"
+                android:text="과제 정보"
+                android:textColor="#020202"
+                app:cornerRadius="0dp" />
+
+            <Button
+                android:id="@+id/study_info_btn_qna"
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#FFFFFF"
+                android:gravity="center"
+                android:text="공부 정보"
+                android:textColor="#020202"
+                app:cornerRadius="0dp" />
+
+            <Button
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#FFFFFF"
+                android:gravity="center"
+                android:text="질의응답"
+                android:textColor="#020202"
+                app:cornerRadius="0dp" />
+
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <Button
+        android:id="@+id/QuestionButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+        android:backgroundTint="#91CEFF"
+        android:text="질문하기"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_board"
+        android:layout_width="419dp"
+        android:layout_height="426dp"
+        android:layout_marginBottom="10dp"
+        tools:listitem="@layout/question_itemlist"
+        app:layout_constraintBottom_toTopOf="@+id/QuestionButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/horizontalScrollView" />
+
+    <ImageButton
+        android:id="@+id/BackImageButton1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="12dp"
+        android:backgroundTint="#FFFFFF"
+        android:src="@drawable/backarrow"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
