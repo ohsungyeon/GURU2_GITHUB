@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LectureMain">
+
+    <ImageButton
+        android:id="@+id/backButton0"
+        android:layout_width="66dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="4dp"
+        android:background="#FFFFFF"
+        android:contentDescription="돌아가기"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/baseline_arrow_back_24" />
+
+    <TextView
+        android:id="@+id/semesterTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="64dp"
+        android:text="2024-1"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="강의목록"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/semesterTextView" />
+
+    <Button
+        android:id="@+id/button6"
+        android:layout_width="166dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="#91CEFF"
+        android:drawableLeft="@drawable/baseline_search_24"
+        android:drawablePadding="0dp"
+        android:drawableTint="#000000"
+        android:hint=" "
+        android:text="전필/전선 : "
+        android:textColor="#000000"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <Button
+        android:id="@+id/button7"
+        android:layout_width="166dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="#91CEFF"
+        android:drawableLeft="@drawable/baseline_assignment_ind_24"
+        android:drawablePadding="0dp"
+        android:drawableTint="#000000"
+        android:text="학년 : "
+        android:textColor="#000000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/button6"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+
+    <ScrollView
+        android:layout_width="409dp"
+        android:layout_height="517dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button7">
+
+        <LinearLayout
+            android:id="@+id/linearLayoutSubjects"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+<!--                    <TextView-->
+<!--                        android:id="@+id/textView3"-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:text="TextView"-->
+<!--                        app:layout_constraintBottom_toTopOf="@+id/button7"-->
+<!--                        app:layout_constraintEnd_toStartOf="@+id/imageButton2"-->
+<!--                        app:layout_constraintTop_toTopOf="parent" />-->
+
+        </LinearLayout>
+    </ScrollView>
+    <!--메인화면, 강의목록, 마이페이지로 들어가는 버튼 생성-->
+
+    <ImageButton
+        android:id="@+id/imageButton2"
+        android:layout_width="58dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="12dp"
+        android:background="#FFFFFF"
+        android:contentDescription="학기 목록"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/baseline_density_medium_24" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
