@@ -68,8 +68,9 @@ class Q_regist : AppCompatActivity() {
 
         //뒤로가기 버튼 누르면 화면 전환
         binding.BackImageButton2.setOnClickListener{
-            intent.putExtra("databasePath", path)
-            startActivity(intent)
+//            intent.putExtra("databasePath", path)
+//            startActivity(intent)
+            finish()
         }
     }
 }
