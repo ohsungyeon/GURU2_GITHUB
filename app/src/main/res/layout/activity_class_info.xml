@@ -325,7 +325,7 @@
                 app:cornerRadius="0dp" />
 
             <Button
-                android:id="@+id/ass_info_btn_main"
+                android:id="@+id/ass_info_button_main"
                 android:layout_width="110dp"
                 android:layout_height="wrap_content"
                 android:backgroundTint="#FFFFFF"
@@ -335,7 +335,7 @@
                 app:cornerRadius="0dp" />
 
             <Button
-                android:id="@+id/study_info_btn_main"
+                android:id="@+id/study_info_button_main"
                 android:layout_width="110dp"
                 android:layout_height="wrap_content"
                 android:backgroundTint="#FFFFFF"

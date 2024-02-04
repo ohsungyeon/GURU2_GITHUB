@@ -40,21 +40,21 @@ class class_info : AppCompatActivity() {
         }
 
 //        //과제정보페이지로 넘어가기
-        val ass_info_btn_main = findViewById<Button>(R.id.ass_info_btn_main)
+        val ass_info_btn_main = findViewById<Button>(R.id.ass_info_button_main)
         ass_info_btn_main.setOnClickListener{
             val intent = Intent(this, ass_info::class.java)
             startActivity(intent)
         }
 //
         //시험정보페이지로 넘어가기
-        val test_info_btn_main = findViewById<Button>(R.id.ass_info_btn_main)
+        val test_info_btn_main = findViewById<Button>(R.id.test_info_btn_main)
         test_info_btn_main.setOnClickListener{
             val intent = Intent(this, test_info::class.java)
             startActivity(intent)
         }
 
         //공부정보페이지로 넘어가기
-        val study_info_btn_main = findViewById<Button>(R.id.study_info_btn_main)
+        val study_info_btn_main = findViewById<Button>(R.id.study_info_button_main)
         study_info_btn_main.setOnClickListener{
             val intent = Intent(this, study_info::class.java)
             startActivity(intent)
